@@ -1,0 +1,752 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace, sans-serif;
+}
+
+body {
+    background-color: black;
+    color: red;
+}
+
+a {
+    text-decoration: none;
+    color: red;
+}
+
+li {
+    list-style: none;
+}
+
+
+nav {
+    width: 100vw;
+    display: flex;
+}
+
+.logo {
+    width: 50%;
+}
+
+.logo img {
+    width: 200px;
+}
+
+.icon {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.icon i {
+    color: red;
+    font-size: 50px;
+    margin: 0 15px 0 0;
+}
+
+.links {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 50px;    
+
+
+
+    overflow-y: hidden;
+    height: 0vh;
+    transition: all 0.5s;
+}
+
+.links a {
+    font-size: 30px;
+}
+
+.change-links {
+    overflow-y: visible;
+    height: 25vh;
+    transition: all 0.5s;
+}
+
+.nav-links {
+    display: none;
+}
+
+@media screen and (min-width: 1200px) {
+    nav {
+        width: 100vw;
+        display: flex;
+    }
+    .logo img {
+        width: 500px;
+    }
+    .icon {
+        display: none;
+    }
+
+    .change-links {
+        display: none;
+    }
+
+    .nav-links {
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .nav-links a {
+        font-size: 40px;
+        margin: 0 50px 0 0;
+    }
+}
+
+@media screen and (min-width: 776px) {
+    nav {
+        width: 100vw;
+        display: flex;
+    }
+    .logo img {
+        width: 300px;
+    }
+    .icon {
+        display: none;
+    }
+
+    .change-links {
+        display: none;
+    }
+
+    .nav-links {
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .nav-links a {
+        font-size: 20px;
+        margin: 0 50px 0 0;
+    }
+}
+
+.img-about {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+/*
+.img {
+    width: 90%;
+    background-color: purple;
+    padding: 30px;
+    margin: 20px;
+    height: 200px;
+    border-radius: 8px;
+}
+*/
+.about {
+    width: 90%;
+    line-height: 30px;
+    display: flex;
+    flex-direction: column;
+    margin:20px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title .change {
+    margin: 0 0 0 1px;
+}
+
+.title i {
+    margin: 0 0 0 1px;
+}
+
+.about .title i {
+    font-size: 30px;
+}
+
+.me {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.large-screens {
+    display: none;
+}
+
+@media screen and (min-width: 1200px) {
+    .about {
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+    }
+
+    .me {
+        width: 90%;
+        display: flex;
+        text-align: none;
+    }
+
+    .small-screens {
+        display: none;
+    }
+
+    .large-screens {
+        display: block;
+        text-align: center;
+        margin: 0 0 0 150px;
+        gap: 50px;
+    }
+
+    .title .change {
+        margin: 0 0 0 80px;
+    }
+    
+    .title i {
+        margin: 0 0 0 80px;
+    }
+}
+
+
+.services {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    line-height: 25px;
+    width: 100vw;
+    margin: 20px 0 0 0px;
+}
+
+@media screen and (min-width: 1200px) {
+    .services {
+        display: flex;
+        flex-direction: column;
+        margin: 50px 0 50px 0;
+    }
+
+    .container {
+        display: flex;
+    }
+}
+
+.web-dev {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid red;
+    margin: 20px;
+    padding: 10px;
+    transition: all 1s;
+    border-radius: 10px;
+}
+
+
+.web-dev i {
+    font-size: 50px;
+}
+
+.web-dev h1 {
+    margin: 15px;
+}
+
+.web-dev:hover {
+    color: whitesmoke;
+    background-color: red;
+    transition: all 1s;
+}
+
+.web-des {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid red;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.web-des i {
+    font-size: 50px;
+}
+
+.web-des h1 {
+    margin: 15px;
+}
+
+.web-des:hover {
+    color: whitesmoke;
+    background-color: red;
+    transition: all 1s;
+}
+
+.graph-des {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid red;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.graph-des i {
+    font-size: 50px;
+}
+
+.graph-des h1 {
+    margin: 15px;
+}
+
+.graph-des:hover {
+    color: whitesmoke;
+    background-color: red;
+    transition: all 1s;
+}
+
+.desc i {
+    font-size: 30px;
+}
+
+hr {
+    margin: 0 35px 0 35px;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    margin: 20px 0 0 0;
+}
+
+.skills i {
+    font-size: 30px;
+}
+
+.frontend {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+
+.header {
+    margin: 25px 0 0 0;
+}
+
+.header i {
+    font-size: 30px;
+}
+
+.html-css {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.html-bar {
+    height: 20px;
+    width: 90vw;
+    padding: 10px;
+    margin: 0 0 24px 20px;
+    background-color: red;
+    border-radius: 5px;
+    position: relative;
+}
+
+.html-stats {
+    height: 20px;
+    width: 90%;
+    padding: 10px;
+    margin: 0;
+    background-color: wheat;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.javascript {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.js-bar {
+    height: 20px;
+    width: 90vw;
+    padding: 10px;
+    margin: 0 0 24px 20px;
+    background-color: red;
+    border-radius: 5px;
+    position: relative;
+}
+
+.js-stats {
+    height: 20px;
+    width: 70%;
+    padding: 10px;
+    margin: 0;
+    background-color: wheat;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.react {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.react-bar {
+    height: 20px;
+    width: 90vw;
+    padding: 10px;
+    margin: 0 0 24px 20px;
+    background-color: red;
+    border-radius: 5px;
+    position: relative;
+}
+
+.react-stats {
+    height: 20px;
+    width: 50%;
+    padding: 10px;
+    margin: 0;
+    background-color: wheat;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.front-head {
+    text-align: start;
+    margin: 10px 0 20px 30px;
+}
+
+.front-head h1 {
+    color: wheat;
+}
+
+.html {
+    margin: 20px 0 0 0;
+}
+
+.header {
+    text-align: center;
+}
+
+.back-head {
+    text-align: start;
+    margin: 10px 0 20px 30px;
+}
+
+.back-head h1 {
+    color: wheat;
+}
+
+.node {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.node-bar {
+    height: 20px;
+    width: 90vw;
+    padding: 10px;
+    margin: 0 0 24px 20px;
+    background-color: red;
+    border-radius: 5px;
+    position: relative;
+}
+
+.node-stats {
+    height: 20px;
+    width: 50%;
+    padding: 10px;
+    margin: 0;
+    background-color: wheat;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.express {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.express-bar {
+    height: 20px;
+    width: 90vw;
+    padding: 10px;
+    margin: 0 0 24px 20px;
+    background-color: red;
+    border-radius: 5px;
+    position: relative;
+}
+
+.express-stats {
+    height: 20px;
+    width: 50%;
+    padding: 10px;
+    margin: 0;
+    background-color: wheat;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.python {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.python-bar {
+    height: 20px;
+    width: 90vw;
+    padding: 10px;
+    margin: 0 0 24px 20px;
+    background-color: red;
+    border-radius: 5px;
+    position: relative;
+}
+
+.python-stats {
+    height: 20px;
+    width: 50%;
+    padding: 10px;
+    margin: 0;
+    background-color: wheat;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@media  screen and (min-width: 1200px) {
+    .skills {
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+    }
+
+    .header {
+        margin: 25px 0 0 0;
+    }
+
+    .header i {
+        font-size: 30px;
+    }
+
+
+    .html-bar {
+    height: 20px;
+    width: 40vw;
+    padding: 10px;
+    margin: 0 0 24px 20px;
+    background-color: red;
+    border-radius: 5px;
+    position: relative;
+}
+
+.html-stats {
+    height: 20px;
+    width: 90%;
+    padding: 10px;
+    margin: 0;
+    background-color: wheat;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+  .html-css {
+      display: flex;
+      justify-content: space-evenly;
+      width: 50vw;
+  }
+
+  .js-bar {
+    height: 20px;
+    width: 40vw;
+    padding: 10px;
+    margin: 0 0 24px 20px;
+    background-color: red;
+    border-radius: 5px;
+    position: relative;
+}
+
+.js-stats {
+    height: 20px;
+    width: 70%;
+    padding: 10px;
+    margin: 0;
+    background-color: wheat;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.react-bar {
+    height: 20px;
+    width: 40vw;
+    padding: 10px;
+    margin: 0 0 24px 20px;
+    background-color: red;
+    border-radius: 5px;
+    position: relative;
+}
+
+.html-stats {
+    height: 20px;
+    width: 50%;
+    padding: 10px;
+    margin: 0;
+    background-color: wheat;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+    .node-bar {
+        height: 20px;
+        width: 40vw;
+        padding: 10px;
+        margin: 0 0 24px 20px;
+        background-color: red;
+        border-radius: 5px;
+        position: relative;
+    }
+    
+    .node-stats {
+        height: 20px;
+        width: 50%;
+        padding: 10px;
+        margin: 0;
+        background-color: wheat;
+        border-radius: 5px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .express-bar {
+        height: 20px;
+        width: 40vw;
+        padding: 10px;
+        margin: 0 0 24px 20px;
+        background-color: red;
+        border-radius: 5px;
+        position: relative;
+    }
+    
+    .express-stats {
+        height: 20px;
+        width: 50%;
+        padding: 10px;
+        margin: 0;
+        background-color: wheat;
+        border-radius: 5px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .python-bar {
+        height: 20px;
+        width: 40vw;
+        padding: 10px;
+        margin: 0 0 24px 20px;
+        background-color: red;
+        border-radius: 5px;
+        position: relative;
+    }
+    
+    .python-stats {
+        height: 20px;
+        width: 50%;
+        padding: 10px;
+        margin: 0;
+        background-color: wheat;
+        border-radius: 5px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    align-items: center;
+}
+
+
+.contact-link {
+    padding: 10px;
+    background-color: wheat;
+    width: 50%;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    width: 90vw;
+    text-align: center;
+    margin: 20px;
+}
+
+.description h1 {
+    text-align: center;
+    margin: 0 0 20px 25px;
+}
+
+.copy-write {
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 25px;
+}
+
+.latest {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 30px;
+}
+
+.projects-link {
+    width: 80%;
+    padding: 20px;
+    margin: 35px 0 0 30px;
+    height: 24px;
+    background-color: wheat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
