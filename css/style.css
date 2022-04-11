@@ -160,6 +160,7 @@ nav {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: relative;
 }
 
 .title .change {
@@ -168,6 +169,30 @@ nav {
 
 .title i {
     margin: 0 0 0 1px;
+}
+
+.par {
+    position: relative;
+    animation-name: icons;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes icons {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 10px;
+    }
 }
 
 .about .title i {
@@ -259,9 +284,10 @@ nav {
 }
 
 .web-dev:hover {
-    color: whitesmoke;
+    color: black;
     background-color: red;
     transition: all 1s;
+    border: 2px solid wheat;
 }
 
 .web-des {
@@ -282,9 +308,10 @@ nav {
 }
 
 .web-des:hover {
-    color: whitesmoke;
+    color: black;
     background-color: red;
     transition: all 1s;
+    border: 2px solid wheat;
 }
 
 .graph-des {
@@ -305,9 +332,10 @@ nav {
 }
 
 .graph-des:hover {
-    color: whitesmoke;
+    color: black;
     background-color: red;
     transition: all 1s;
+    border: 2px solid wheat;
 }
 
 .desc i {
@@ -703,6 +731,14 @@ hr {
     justify-content: center;
     align-items: center;
     margin: 20px;
+    color: red;
+    transition: all 1s;
+}
+
+.contact-link:hover {
+    background-color: black;
+    transition: all 1s;
+    border: 1px solid red;
 }
 
 .description {
@@ -749,4 +785,56 @@ hr {
     justify-content: center;
     align-items: center;
     border-radius: 8px;
+}
+
+.projects-link:hover {
+    background-color: black;
+    transition: all 1s;
+    border: 1px solid red;
+}
+
+.contact-icons  {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+   /* margin: 0 20px 15px 250px; */
+    border-radius: 3px;
+    border: 1px solid red;
+    background-color: black;
+    color: wheat;
+    padding: 5px;
+    position: fixed;
+    bottom: 30px;
+    right: 10px;
+    font-size: 20px;
+    transition: all 2s;
+    display: none;
+    animation-name: top;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.btn:hover {
+    background-color: red;
+    color: black;
+    border: 1px solid wheat;
+}
+
+@keyframes top {
+    100% {
+        position: fixed;
+        bottom: 20px;
+        transition: all 2s;
+    }
+
 }
