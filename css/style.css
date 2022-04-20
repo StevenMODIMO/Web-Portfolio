@@ -25,6 +25,10 @@ li {
 nav {
     width: 100vw;
     display: flex;
+    position: sticky;
+    top: 0;
+    margin: 50px 0 0 0;
+    transition: all 2s;
 }
 
 .logo {
@@ -54,19 +58,17 @@ nav {
     justify-content: center;
     align-items: center;
     line-height: 50px;    
-
-
-
     overflow-y: hidden;
     height: 0vh;
     transition: all 0.5s;
+    margin: 0 0 0 0;
 }
 
 .links a {
     font-size: 30px;
 }
 
-.change-links {
+.toggle-links {
     overflow-y: visible;
     height: 25vh;
     transition: all 0.5s;
@@ -76,16 +78,21 @@ nav {
     display: none;
 }
 
-.main-page {
-    height: 100vh;
-    width: 0vw;
-    overflow-x: hidden;
+.intro {
+    margin: 20px;
+    height: 0vh;
+    overflow-y: hidden;
+    transition: all 1s;
 }
 
-.show {
-    overflow-x: visible;
-    transition: all 2s;
-    width: 90vw;
+.show-intro {
+    height: 30vh;
+    overflow-y: visible;
+    transition: all 1s;
+}
+
+.main-page {
+    height: 100vh;
 }
 
 @media screen and (min-width) {
@@ -94,7 +101,7 @@ nav {
 
 @media screen and (min-width: 776px) {
     .main-page {
-        height: 70vh;
+        height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -212,6 +219,16 @@ nav {
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    width: 0vw;
+    overflow-x: hidden;
+    transition: all 1s;
+    margin: 40px 0 0 0;
+}
+
+.show-client {
+    width: 90vw;
+    overflow-x: visible;
+    transition: all 1s;
 }
 
 .myself {
@@ -223,7 +240,6 @@ nav {
 }
 
 .location {
-    margin: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -957,7 +973,7 @@ hr {
 }
 
 
-.btn {
+.top-btn {
     display: flex;
     flex-direction: column;
     justify-content: center;
