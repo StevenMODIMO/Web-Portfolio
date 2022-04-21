@@ -25,10 +25,8 @@ li {
 nav {
     width: 100vw;
     display: flex;
-    position: sticky;
-    top: 0;
-    margin: 50px 0 0 0;
     transition: all 2s;
+    background-color: wheat;
 }
 
 .logo {
@@ -61,7 +59,7 @@ nav {
     overflow-y: hidden;
     height: 0vh;
     transition: all 0.5s;
-    margin: 0 0 0 0;
+    margin: 0;
 }
 
 .links a {
@@ -76,6 +74,7 @@ nav {
 
 .nav-links {
     display: none;
+
 }
 
 .intro {
@@ -92,13 +91,9 @@ nav {
 }
 
 .main-page {
+    margin: 50px 0 0 0;
     height: 100vh;
 }
-
-@media screen and (min-width) {
-    
-}
-
 @media screen and (min-width: 776px) {
     .main-page {
         height: 100vh;
