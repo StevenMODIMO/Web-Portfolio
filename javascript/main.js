@@ -42,6 +42,5 @@ topButton.onclick = () => {
   });
 };
 
-
-document.body.onload = setTimeout(showIntroPage, 2000);
-document.body.onload = setTimeout(showClientPage, 3000);
+window.onload = setTimeout(showIntroPage, 2000);
+window.onload = setTimeout(showClientPage, 3000);

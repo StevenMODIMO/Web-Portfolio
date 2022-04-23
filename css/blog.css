@@ -1,0 +1,19 @@
+.google-blog {
+    width: 100vw;
+    margin: 10px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid wheat;
+    border-radius: 5px;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.google-blog img {
+    width: 300px;
+    height: 100px
+}
