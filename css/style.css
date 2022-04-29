@@ -59,7 +59,7 @@ nav {
     overflow-y: hidden;
     height: 0vh;
     transition: all 0.5s;
-    margin: 0;
+    margin: 20px 0 0 0;
 }
 
 .links a {

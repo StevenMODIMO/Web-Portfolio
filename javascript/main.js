@@ -3,6 +3,7 @@ const introPage = document.querySelector(".intro");
 const clientPage = document.querySelector(".client-to-me");
 const form = document.querySelector('form');
 const topButton = document.querySelector("#top-btn");
+const activeService = document.querySelector('.services');
 
 
 const showIntroPage = () => {

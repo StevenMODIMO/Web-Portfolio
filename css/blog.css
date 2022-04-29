@@ -1,19 +1,65 @@
-.google-blog {
+h1 {
+    text-align: center;
+    margin: 60px 0 0 0;
+}
+
+.blogs {
     width: 100vw;
-    margin: 10px 0 0 0;
     display: flex;
     flex-direction: column;
-    border: 1px solid wheat;
-    border-radius: 5px;
 }
 
-.image {
+.blog {
+    width: 90%;
     display: flex;
     justify-content: center;
-    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid wheat;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 5px;
+    transition: all 1s;
 }
 
-.google-blog img {
-    width: 300px;
-    height: 100px
+.gog {
+    width: 100px;
+    height: 100px;
+}
+
+.os {
+    width: 150px;
+}
+
+.js {
+    width: 120px;
+}
+
+.javascript {
+    padding: 10px;
+}
+
+@media screen and (min-width: 776px) {
+    .blog {
+        height: 20vh;
+        font-size: 20px;
+        margin: 20px 0 0 40px;
+        padding: 50px;
+    }
+
+    .javascript {
+        padding: 0 0 10px 0;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .blog {
+        width: 80%;
+        height: 20vh;
+        font-size: 30px;
+        margin: 20px 0 0 60px;
+        padding: 70px;
+    }
+
 }

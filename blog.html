@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./Assets/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./css/blog.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/blog.css">
     <title>My Blog</title>
 </head>
 <body>
@@ -31,17 +32,33 @@
         <a href="blog.html">Blog</a>
     </section>
 
-
-
-    <section class="warning">
-        <h1 style="text-align: center;">Still Under Construction</h1>
-    </section>
+    <h1>My Blog</h1>
     
+    <div class="blogs">
+        <section class="google blog">
+            <img src="./Assets/cgrome.jpeg" alt="google" class="gog">
+            <a href="https://dev.to/stevenmodimo/how-to-delete-your-google-web-history-16pd" target="_blank">
+            How To Delete Google History
+            </a>
+        </section>
+        <section class="operating-systems blog">
+            <img src="./Assets/operating-system.jpg" alt="os" class="os">
+            <a href="https://dev.to/stevenmodimo/operating-systems-programmers-should-be-familiar-with-58j" target="_blank">
+                OS Programmers should be familiar with
+            </a>
+        </section>
+        <section class="javascript blog">
+            <img src="./Assets/js.png" alt="js" class="js">
+            <a href="https://dev.to/stevenmodimo/uncommon-things-that-javascript-can-do-3679" target="_blank">
+                Uncommon Things that Javascript can do
+            </a>
+        </section>
+    </div>
 
-
-
-
-
+    <button id="top-btn" class="top-btn">
+        <i class="bi bi-arrow-up"></i>
+        <span>Top</span>
+    </button>
 
     <script src="./javascript/main.js"></script>
 </body>
